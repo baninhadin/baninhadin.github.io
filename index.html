@@ -1,9 +1,283 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title> Greetings </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shorcut icon" href="image/evolty.png">
+    <title>Selamat Datang | Evolty 2020</title>
+    <link rel="stylesheet" href="css/style_s.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
 </head>
-<body>
-    Halo gaaaan
+
+<body style="background-color: black;">
+
+    <div class="background" style="background-image: url('image/BG atas.png'); background-size: 100% 100%;">
+
+        <section class="navbar" style="display:flex; align-items: center; margin: 0;">
+    <div class="container-fluid">
+        <div class="row" style="width: 100%;">
+            <!-- Sementara dihardcode karena tidak menemukan masalahnya dimana-->
+            <div class="col-lg-12">
+                <div class="wrapper-flex-center" id="hamburgerwrapper">
+                    <img id="logo-navbar" src="image/logo home evolty-03.png" alt="" srcset="">                                                                                                                                                                 
+                    <nav class="navbar navbar-dark" id="idNavbar" style="height: fit-content; margin-right: 25px; padding: 0; width: fit-content;">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="#navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>                                    
+                                </button>                                                                                              
+                            </nav>
+                    <div class="isi-wrapper" id="isiwrapper" style="">
+                                <div class="tulisan-1"><span>Contact Us</span></div>
+                                     <div class="dropdown">
+                                        <div class="tulisan-1 dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Event</span></div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="https://mage-its.com">Mage</a>
+                                            <a class="dropdown-item" href="/electra">Electra</a>
+                                            <a class="dropdown-item" href="/baronas">Baronas</a>
+                                            <a class="dropdown-item" href="/evolve">Evolve</a>
+                                    </div>
+                                </div>
+
+                                <a href="/login">
+                                    <div class="tulisan-1" style="border: 0; font-weight: 500;"><span>Login</span></div>
+                                </a>
+                            </div>                                                        
+                </div>
+            </div>
+        </div>
+        <div class="row" style="width: 100%;">
+            <div class="col-lg-12">
+                <div class="wrapper-flex-center" style="flex-direction: row-reverse;">
+                    <div class="">
+                        <div class="collapse navbar-collapse" style="" id="navbarSupportedContent1">
+                            <a href="/news" style="text-decoration:none;">
+                                <div class="tulisan-1" style="font-weight: 500;"><span>News</span></div>
+                            </a>
+
+                            <a href="/contact" style="text-decoration:none;">
+                                <div class="tulisan-1" style="font-weight: 500;"><span>Contact Us</span></div>
+                            </a>
+                            <div class="dropdown">
+                                <div class="tulisan-1 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <span>Event</span></div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="https://mage-its.com">Mage</a>
+                                    <a class="dropdown-item" href="/electra">Electra</a>
+                                    <a class="dropdown-item" href="/baronas">Baronas</a>
+                                    <a class="dropdown-item" href="/evolve">Evolve</a>
+                                </div>
+                            </div>
+                            <a href="/login" style="text-decoration:none;">
+                                <div class="tulisan-1" style="border: 0; font-weight: 500;"><span>Login</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="section1" style="margin-top: 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="wrapper-flex-center d-flex justify-content-center justify-content-lg-end">
+                            <img id="logo-evolty" src="image/evolty.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style=" margin-top: 35px;">
+                        <div class="wrapper-flex-center" style="align-items: center; height: 100%;">
+                            <div class="wrapper-flex-center-down align-items-lg-start">
+                                <div class="garis-bawah">
+                                    <img id="gambar-tulisan" src="image/tulisan-02.png" alt="" srcset="">
+                                </div>
+                                <div class="garis-bawah" style="border: none;">
+                                    <img id="gambar-tulisan" src="image/tulisan-04.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wrapper-flex-center" style="justify-content: center; align-items: center;">
+                        <img src="image/tulisan-05.png" alt="" srcset="" style="width: 20%;">
+                        <div class="tulisan-1"
+                            style="font-size: 5vw; font-family: product_sans; font-weight: bold; letter-spacing: 7.5px;">
+                            Jek Copas Aku Suurr
+                        </div>
+                        <img src="image/tulisan-05.png" alt="" srcset="" style="width: 20%; transform: rotate(180deg);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="background" style="background-image: url('image/BG Bawah.png'); background-size: 100% 100%;">
+        <section class="section3" style="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="wrapper-flex-center-down" style="justify-content: center;">
+                            <div class="garis-bawah-judul" style="width: auto;">
+                                <div class="tulisan-2-judul">
+                                    APA ITU EVOLTY?
+                                </div>
+                            </div>
+                            <div class="tulisan-3-konten">
+                                <span style="margin-left: 50px;">Sebuah</span> rangkaian kegiatan yang disusun dalam
+                                rangka memfasilitasi
+                                perkembangan ilmu elektroteknik dan teknologi yang mewadahi kalangan akademisi untuk
+                                terus berkreasi serta
+                                menunjukkan pada masyarakat akan hasil potensi ilmu elektroteknik dan teknologi di
+                                Indonesia.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section4" style="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="wrapper-flex-center-down">
+                            <div class="garis-bawah-judul" style="">
+                                <div class="tulisan-2-judul">
+                                    TEMA
+                                </div>
+                            </div>
+                            <div class="tulisan-3-konten">
+                                <span style="margin-left: 50px;">"Technological</span> Revolution and It's Impact for
+                                Global Society"
+                                <br>
+                                <br>
+                                <span style="margin-left: 50px;">EVOLTY</span> 2020 menyajikan konsep pembelajaran
+                                teknologi
+                                kepada khalayak umum dengan cara yang menyenangkan. Sehingga seluruh rangkaian kegiatan
+                                yang
+                                ada pada EVOLTY 2020 tidak hanya ditujukan kepada peserta, namun juga seluruh masyarakat
+                                umum
+                                yang ingin mempelajari dasar-dasar teknologi dan ingin turut berkontribusi untuk
+                                Indonesia yang
+                                lebih baik.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="wrapper-flex-center-down">
+                            <div class="garis-bawah-judul" style="">
+                                <div id="judul-sub-event" class="tulisan-2-judul">
+                                    SUB EVENT
+                                </div>
+                            </div>
+                            <div class="tulisan-3-konten">
+                                <span style="margin-left: 50px;">EVOLTY</span> 2020 berisikan 4 kegiatan diawali dengan
+                                pra event dan diakhiri dengan acara penutup.
+                            </div>
+                            <div class="wrapper-flex-center" style="width: 60%; margin-top: 50px;">
+                                <img src="image/mage PUTIH.png" alt="" srcset="" style="width: 35%;"
+                                    onclick="location.href='https://mage-its.com.'">
+                                <img src="image/ELECTRA PUTIH.png" alt="" srcset="" style="width: 35%;"
+                                    onclick="location.href='/electra'">
+                            </div>
+                            <div class="wrapper-flex-center" style="width: 60%; margin-top: 50px;">
+                                <img src="image/baronas white logo.png" alt="" srcset="" style="width: 35%;"
+                                    onclick="location.href='/baronas'">
+                                <img src="image/logo evolve.png" alt="" srcset="" style="width: 35%;"
+                                    onclick="location.href='/evolve'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="wrapper-flex-center-down">
+                            <div class="garis-bawah-judul">
+                                <div class="tulisan-2-judul">
+                                    GALERI
+                                </div>
+                            </div>
+                            <div class="wrapper-flex-center carousel"
+                                style="justify-content: center; margin-top: 30px; width: 70%;">
+                                <img src="image/IMG_1566.jpg" alt="" srcset="" style="width: 100%;">
+                                <img src="image/IMG_9247.jpg" alt="" srcset="" style="width: 100%;">
+                                <img src="image/4 FINAL (75).jpg" alt="" srcset="" style="width: 100%;">
+                            </div>
+                            <div class="wrapper-flex-center"
+                                style="justify-content: center; align-items: center; margin-top: 30px;">
+                                <img src="image/tulisan-05.png" alt="" srcset="" style="width: 35%;">
+                                <img src="image/tulisan-05.png" alt="" srcset=""
+                                    style="width: 35%; transform: rotate(180deg);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section7" style="margin-top: 150px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="wrapper-flex-center-down">
+                            <div class="tulisan-1" style="display: flex; justify-content: center;">
+                                FIND US
+                            </div>
+                            <div class="wrapper-flex-center" style="justify-content: center;">
+                                <img id="logo-medsos" src="image/logo-03.png" alt="" srcset=""
+                                    onclick="location.href='https://www.instagram.com/evolty_its/?hl=id'">
+                                <img id="logo-medsos" src="image/logo-05.png" alt="" srcset=""
+                                    onclick="location.href='https://twitter.com/evolty_its'">
+                                <img id="logo-medsos" src="image/logo-06.png" alt="" srcset=""
+                                    onclick="location.href='https://line.me/R/ti/p/%40evolty_its'">
+                            </div>
+                            <div class="wrapper-flex-center"
+                                style="justify-content: center; margin-top: 15px; margin-bottom: 50px;">
+                                <img id="logo-berderet" src="image/logo berderet.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/slickcarousel.js"></script>
+    <script type="text/javascript" src="js/navbar2.js"></script>
+    <script type="text/javascript">alert("Sabar Suurr, Kancamu Atrah Noob Iki")</script>
+
 </body>
+
 </html>

@@ -1,0 +1,603 @@
+@font-face{
+    font-family: 'coolvetica_condensed';
+    src: url("../fonts/font_coolvetica/coolvetica\ condensed\ rg.ttf");
+}
+@font-face{
+    font-family: 'coolvetica_crammed';
+    src: url("../fonts/font_coolvetica/coolvetica\ crammed\ rg.ttf");
+}
+@font-face{
+    font-family: 'coolvetica_rg';
+    src: url("../fonts/font_coolvetica/coolvetica\ rg.ttf");
+}
+@font-face{
+    font-family: 'coolvetica_compressed';
+    src: url("../fonts/font_coolvetica/coolvetica_compressed_rg.ttf");
+}
+
+@font-face{
+    font-family: 'product_sans';
+    src: url("../fonts/Font_konten/Product\ Sans\ Regular.ttf");
+}
+
+$font_coolvetica_condensed: 'coolvetica_condensed';
+$font_product_sans: 'product_sans';
+$warna_dasar: white;
+$warna_dasar_2 : #283361;
+$mobile_sm: "(max-width: 320px)";
+$mobile_md: "(max-width: 375px)";
+$mobile_lg: "(max-width: 425px)";
+$tablet: "(max-width: 768px)";
+$ipad_potrait: "(min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)";
+$ipad_landscape: "(min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)";
+
+body, html {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    max-width: 100%;
+}
+
+section{
+    margin-top: 150px;
+}
+
+.no-italics {
+    font-style: normal;
+}
+
+.navbar{
+    width: 100%;
+    height: 110px;
+}
+
+.background{
+    width: 100%;
+    height: auto;
+}
+
+.wrapper-flex-center-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    .tulisan-1{
+        font-size: 4em;
+        @media #{$mobile_lg}{
+            font-size: 3em;
+        }
+        @media #{$mobile_md}{
+            font-size: 2.5em;
+        }
+        @media #{$mobile_sm}{
+            font-size: 2em;
+        }
+    }
+    .tulisan-1:nth-child(2){
+        line-height: 80px;
+        font-size: 10em;
+        @media #{$mobile_lg}{
+            font-size: 7em;
+        }
+        @media #{$mobile_md}{
+            font-size: 6em;
+        }
+        @media #{$mobile_sm}{
+            font-size: 5em;
+        }
+
+    }
+}
+
+// .dropdown-item{
+//     font-family: $font_coolvetica_condensed;
+// }
+
+.tulisan-1{
+    font-size: 1.5em;
+    font-family: $font_coolvetica_condensed;
+    color: $warna_dasar;
+}
+
+.tulisan-2-judul{
+    font-size: 2.5em;
+    font-family: $font_product_sans;
+    color: $warna_dasar;
+    font-weight: 800;
+    letter-spacing: 5px;
+    @media #{$mobile_lg}{
+        font-size: 2em;
+        text-align: center;
+    }
+    @media #{$mobile_md}{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    @media #{$mobile_sm}{
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+.tulisan-2-judul-contact{
+    font-size: 4em;
+    font-family: $font_product_sans;
+    color: $warna_dasar;
+    font-weight: 800;
+    letter-spacing: 5px;
+    @media #{$mobile_lg}{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    @media #{$mobile_md}{
+        font-size: 2em;
+        text-align: center;
+    }
+    @media #{$mobile_sm}{
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+.tulisan-3-konten{
+    font-size: 1.3rem;
+    font-family: $font_product_sans;
+    color: $warna_dasar;
+    font-style: italic;
+    width: 85%;
+    text-align: center;
+    letter-spacing: 5px;
+    @media #{$mobile_lg}{
+        text-align: center;
+        font-size: 1rem;
+    }
+    @media #{$mobile_md}{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    @media #{$mobile_sm}{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+}
+
+.tulisan-3-kontenelectrath{
+    font-size: 3rem;
+    font-family: $font_product_sans;
+    color: $warna_dasar;
+    font-style: italic;
+    width: 85%;
+    text-align: center;
+    letter-spacing: 5px;
+    @media #{$mobile_lg}{
+        // text-align: center;
+        font-size: 2.5rem;
+    }
+    @media #{$mobile_md}{
+        // text-align: center;
+        font-size: 2rem;
+    }
+    @media #{$mobile_sm}{
+        // text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+.tulisan-3-contact{
+    font-size: 3rem;
+    font-family: $font_product_sans;
+    color: $warna_dasar;
+    font-style: italic;
+    width: 85%;
+    text-align: center;
+    letter-spacing: 5px;
+    @media #{$mobile_lg}{
+        // text-align: center;
+        font-size: 1.5rem;
+    }
+    @media #{$mobile_md}{
+        // text-align: center;
+        font-size: 1.3rem;
+    }
+    @media #{$mobile_sm}{
+        // text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.tulisan-3-kontenelectra-tl{
+    font-size: 3rem;
+    font-family: $font_product_sans;
+    color: $warna_dasar;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media #{$mobile_lg}{
+      align-items: stretch;
+      //  text-align: center;
+        font-size: 2.5rem;
+    }
+    @media #{$mobile_md}{
+        //text-align: center;
+        font-size: 2rem;
+    }
+    @media #{$mobile_sm}{
+      //  text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+.tulisan-3-kontenelectra-tldate{
+    font-size: 1.3rem;
+    font-family: $font_product_sans;
+    color: $warna_dasar;
+    letter-spacing: 2px;
+    @media #{$mobile_lg}{
+        //text-align: center;
+        font-size: 1rem;
+    }
+    @media #{$mobile_md}{
+        //text-align: center;
+        font-size: 0.8rem;
+    }
+    @media #{$mobile_sm}{
+        //text-align: center;
+        font-size: 0.7rem;
+    }
+}
+
+.judulKategoriBaronas{
+    font-size: x-large;
+    font-family: $font_product_sans;
+    color: $warna_dasar;
+    letter-spacing: 2px;
+    @media #{$ipad_potrait}{
+        text-align: center;
+    }
+    @media #{$tablet}{
+        text-align: center;
+    }
+}
+
+.pesertaKategoriBaronas{
+    color: $warna_dasar;
+    font-family: $font_product_sans;
+    text-align: left;
+    font-size: larger;
+    @media #{$ipad_potrait}{
+        text-align: center;
+    }
+    @media #{$tablet}{
+        text-align: center;
+    }
+}
+
+.deskripsiKategoriBaronas{
+    color: $warna_dasar;
+    font-family: $font_product_sans;
+    text-align: left;
+}
+
+.buttonKategoriBaronas{
+    color: white;
+    background-color: black;
+    border: solid white;
+    padding: 10px;
+    border-radius: 25px;
+    &:hover{
+        background-color: white;
+        color: black;
+        transition-duration: 1s;
+    }
+    @media #{$ipad_potrait}{
+        display: block;
+        margin: 0 auto;
+    }
+    @media #{$tablet}{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.logoKategoriBaronas{
+    @media #{$ipad_potrait}{
+        display: block;
+        margin: 0 auto;
+    }
+    @media #{$ipad_landscape}{
+        transform: translateX(-25%);
+    }
+    @media #{$tablet}{
+        //transform: translateX(70%);
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.listKategori{
+    @media (min-width: 1024px) {
+        transform: translateX(-10%);
+    }
+}
+
+.garis-bawah{
+    height: auto;
+    width: 85%;
+    padding: 0 15px 15px 15px;
+    margin-top: 20px;
+    border-bottom: 10px solid white;
+    #gambar-tulisan{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.garis-bawah-judul{
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-bottom: 10px solid white;
+    .tulisan-2-judul{}
+    @media #{$tablet}{
+        width: auto;
+        border-bottom: 9px solid white;
+    }
+    @media #{$mobile_lg}{
+        width: auto;
+        border-bottom: 8px solid white;
+    }
+    @media #{$mobile_md}{
+        width: auto;
+        border-bottom: 7px solid white;
+    }
+    @media #{$mobile_sm}{
+        width: auto;
+        border-bottom: 6px solid white;
+    }
+}
+
+
+
+
+// .garis-bawah::after{
+//     position: absolute;
+//     content: '';
+//     border-bottom: 9px solid white;
+//     width: 120%;
+//     transform: translateX(-50%);
+//     bottom: -15px;
+//     left: 50%;
+// }
+
+.wrapper-flex-center{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    #logo-evolty{
+        max-width: 75%;
+        height: auto;
+    }
+    #logo-medsos{
+        width: 3.5em;
+        margin-right: 15px;
+        cursor: pointer;
+        @media #{$mobile_lg}{
+            width: 3em;
+        }
+        @media #{$mobile_md}{
+            width: 2.5em;
+        }
+        @media #{$mobile_sm}{
+            width: 2.25em;
+        }
+    }
+    #logo-berderet{
+        width: 15em;
+        @media #{$mobile_lg}{
+            width: 13em;
+        }
+        @media #{$mobile_md}{
+            width: 12em;
+        }
+        @media #{$mobile_sm}{
+            width: 10em;
+        }
+    }
+    #logo-navbar{
+        max-height: 50px;
+        width: auto;
+        @media #{$mobile_lg}{
+            height: 40px;
+        }.popke1{.popke1{
+            @media #{$mobile_lg}{
+                overflow: scroll;
+            }
+         }
+            @media #{$mobile_lg}{
+                overflow: scroll;
+            }
+         }
+        @media #{$mobile_md}{
+            height: 35px;
+        }
+        @media #{$mobile_sm}{
+            height: 30px;
+        }
+    }
+    .isi-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
+        padding-right: 15px;
+        .tulisan-1{
+            height: auto;
+            font-size: 1.5em;
+            font-family: $font_coolvetica_condensed;
+            color: $warna_dasar;
+            margin-left: 15px;
+            padding-right: 15px;
+            border-right: 2px solid $warna_dasar;
+            min-width: 80px;
+            span:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.wrapper-flex-centertl{
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    @media #{$mobile_lg}{
+        //display: inline-block;
+        justify-content: center;
+        width: 3em;
+    }
+    @media #{$mobile_md}{
+      //display: inline-block;
+      justify-content: center;
+        width: 2.5em;
+    }
+    @media #{$mobile_sm}{
+      //display: inline-block;
+      justify-content: center;
+        width: 2.25em;
+    }
+  }
+
+  #overlay, #overlay-2{
+    position: fixed;
+    height: 100%; 
+    width: 100%;
+    top: 0;
+    right: 0;  
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 99999;
+ }
+
+ 
+ #popup{
+    max-width: 600px;
+    width: 80%;
+    max-height: 450px;
+    height: fit-content; 
+    padding: 20px;
+    position: relative;
+    background: black;
+    margin: 20px auto;
+    top: 15%;
+    border-radius: 15px;
+    color: white;
+    font-family: $font_product_sans;
+    @media (max-width: 992px) and (orientation: landscape){
+        height: 50%;
+    }
+    @media #{$mobile_lg}{
+        height: 85%;
+    }
+    @media #{$mobile_md}{
+        
+    }
+    @media #{$mobile_sm}{
+        
+    }
+ }
+
+ #popup-2{
+    max-width: 600px;
+    width: 80%;
+    max-height: fit-content;
+    height: fit-content; 
+    padding: 20px;
+    position: relative;
+    background: black;
+    margin: 10px auto;
+    top: 15%;
+    border-radius: 15px;
+    color: white;
+    font-family: $font_product_sans;
+    @media (max-width: 992px) and (orientation: landscape){
+        height: fit-content;
+    }
+    @media #{$mobile_lg}{
+        height: fit-content;
+    }
+    @media #{$mobile_md}{
+        
+    }
+    @media #{$mobile_sm}{
+        
+    }
+ } 
+ 
+ #close, #close-2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+ }
+
+ #indo-flag{
+    width: 40%;
+ }
+
+ #british-flag{
+    width: 40%;
+ }
+
+ .kotak-bahasa{
+    background-color: black;
+    border: solid white;
+    padding: 5%;
+    border-radius: 25px;
+    &:hover{
+        background-color: white;
+        color: black;
+        transition-duration: 1s;
+    }
+ }
+
+ #indo{
+    @media (max-width: 992px) and (orientation: landscape){
+        transform: translateX(-25%) translateY(-40%) scale(0.35);
+        font-size: xx-large;
+    }
+ }
+
+ 
+
+ #english{
+    @media (max-width: 992px) and (orientation: landscape){
+        transform: translateX(25%) translateY(-140%) scale(0.35);
+        font-size: xx-large;
+    }
+    @media #{$mobile_lg}{
+        margin-top: 5%;
+    }
+    @media #{$mobile_md}{
+        
+    }
+    @media #{$mobile_sm}{
+        
+    }
+ }
+ 
